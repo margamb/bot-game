@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bot game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="score">Robotin is hunting for a bug</h1>
+      <input
+        class="start-btn"
+        type="button"
+        value="start"
+        onClick="document.location.reload(true)">
+      </input>
+    </div>
+    <div id="game">
+      <div id="character">
+        <img class="robot-img" src="./img/robot-small.png" alt="bot image" />
+      </div>
+      <div id="block">
+        <img class="virus-img" src="./img/virus-01.png" alt="virus image" />
+      </div>
+      <div id="background">
+        <img src="./img/background-04.png" alt="background image" />
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

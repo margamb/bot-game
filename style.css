@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.header {
+  width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.start-btn {
+  outline: none;
+  border: none;
+  background: #F04248;
+  margin-left: 20px;
+  padding: 8px 20px;
+  height: fit-content;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.start-btn:hover {
+  background: #F8A0A3;
+}
+
+
+#score {
+  text-align: end;
+  font-size: 20px;
+  font-weight: 700;
+  color: #97ACCE;
+}
+
+#background {
+  background-repeat: no-repeat;
+  animation: background 10s infinite linear;
+  margin-inline: auto;
+  position: relative;
+  top: -70px;
+  left: 0px;
+}
+
+@keyframes background {
+  0% {
+    left: 500px;
+  }
+
+  100% {
+    left: -2000px;
+  }
+}
+
+#game {
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-inline: auto;
+}
+
+#character {
+  width: 50px;
+  height: 80px;
+  object-fit: cover;
+  position: relative;
+  top: 90px;
+  left: 10px;
+}
+
+.robot-img {
+  width: 100%;
+}
+
+.animate {
+  animation: jump 500ms;
+}
+
+.animateBlock {
+  animation: block 1s infinite linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 60px;
+  }
+
+  30% {
+    top: 60px;
+  }
+
+  70% {
+    top: 60px;
+  }
+
+  100% {
+    top: 100px;
+  }
+
+}
+
+#block {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 60px;
+  left: 480px;
+  animation: block 1s infinite linear;
+}
+
+.virus-img {
+  width: 100%;
+}
+
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+
+  100% {
+    left: -40px;
+  }
+}
